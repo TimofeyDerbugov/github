@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Введение в GitHub</title>
+<style>
+  /* Общие стили */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #6a00ff;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Логотип */
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  /* Название курса */
+  .header-title {
+    color: #fff;
+    font-size: 1.8em;
+    margin: 0;
+  }
+
+  /* Контейнер урока */
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  /* Заголовки разделов */
+  h1 {
+    color: #6a00ff;
+  }
+
+  /* Стиль для списков */
+  ul {
+    padding-left: 20px;
+  }
+
+  /* Адаптивность */
+  @media(max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      margin-bottom: 10px;
+    }
+    .header-title {
+      font-size: 1.4em;
+      text-align: center;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <!-- Логотип - можно заменить на свою иконку или изображение -->
+  <img src="logo.PNG" alt="Logo" class="logo" />
+  <h1 class="header-title">Курс: Введение в GitHub</h1>
+</header>
+
+<div class="container">
+  <h1>Что такое GitHub?</h1>
+  <p>GitHub — это веб-платформа для хостинга и совместной работы над проектами с использованием системы контроля версий Git. Она позволяет разработчикам хранить код, отслеживать изменения и работать вместе над проектами.</p>
+
+  <h2>Основные понятия</h2>
+  <ul>
+    <li><strong>Git</strong> — распределённая система контроля версий.</li>
+    <li><strong>Repository (репозиторий)</strong> — место, где хранится проект.</li>
+    <li><strong>Commit (коммит)</strong> — сохранение изменений в истории проекта.</li>
+    <li><strong>Branch (ветка)</strong> — параллельная линия разработки.</li>
+    <li><strong>Pull Request</strong> — запрос на объединение изменений из одной ветки в другую.</li>
+  </ul>
+
+  <h2>Шаги для начала работы</h2>
+  <h3>1. Создание аккаунта</h3>
+  <p>Зарегистрируйтесь на <a href="https://github.com/" target="_blank">GitHub</a>.</p>
+
+  <h3>2. Создание репозитория</h3>
+  <p>Нажмите кнопку <strong>"New"</strong> на главной странице, укажите имя репозитория, описание (по желанию), выберите публичный или приватный и нажмите <strong>"Create repository"</strong>.</p>
+
+  <h3>3. Клонирование репозитория</h3>
+  <pre><code>git clone https://github.com/ваш_профиль/имя_репозитория.git</code></pre>
+
+  <h3>4. Добавление и коммит изменений</h3>
+  <pre><code>git add .</code></pre>
+  <pre><code>git commit -m "Описание изменений"</code></pre>
+
+  <h3>5. Отправка изменений на GitHub</h3>
+  <pre><code>git push origin main</code></pre>
+
+  <h2>Работа с Pull Request</h2>
+  <p>Внесите изменения в отдельной ветке, создайте Pull Request через интерфейс GitHub, обсудите и слейте изменения после проверки.</p>
+
+  <h2>Итоги</h2>
+  <p>GitHub — мощный инструмент для совместной разработки. Основные операции: clone, add, commit, push, pull request. Практика — лучший способ освоить работу с GitHub.</p>
+</div>
+
+</body>
+</html>
